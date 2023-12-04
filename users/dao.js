@@ -1,4 +1,5 @@
 import model from "./model.js";
+//import medel 
 
 export const findAllUsers = () => model.find();
 export const findUserByCredentials = (usr, pass) => model.findOne({ username: usr, password: pass });
