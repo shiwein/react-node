@@ -1,2 +1,3 @@
 NODE_ENV=development
-FRONTEND_URL=https://kanbas-node-server-app-ww5g.onrender.com
+FRONTEND_URL=https://kanbas-node-server-app-vj5k.onrender.com
+<!-- FRONTEND_URL=https://kanbas-node-server-app-ww5g.onrender.com -->
