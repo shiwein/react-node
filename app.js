@@ -7,8 +7,8 @@ import CourseRoutes from './courses/routes.js';
 import ModuleRoutes from './modules/routes.js';
 import AssignmentsRoutes from './assignments/routes.js';
 import "dotenv/config";
-import mongoose from "mongoose";
 import session from "express-session";
+import mongoose from "mongoose";
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "mongodb://127.0.0.1:27017/kanbas";
 mongoose.connect(CONNECTION_STRING);
