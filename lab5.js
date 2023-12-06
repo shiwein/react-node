@@ -61,7 +61,7 @@ const Lab5 = (app) => {
         todos.push(newTodo);
         res.json(todos);
       });    
-    app.get("/a5/todos", (req, res) => {
+    app.get("/lab5/todos", (req, res) => {
         const { completed } = req.query;
         if (completed !== undefined) {
             const completedTodos = todos.filter(
@@ -76,7 +76,7 @@ const Lab5 = (app) => {
     const todo = todos.find((t) => t.id === parseInt(id));
     res.json(todo);
     });    
-    app.get("/a5/todos/:id/title/:title", (req, res) => {
+    app.get("/lab5/todos/:id/title/:title", (req, res) => {
         const { id, title } = req.params;
         const todo = todos.find((t) => t.id === parseInt(id));
         todo.title = title;
